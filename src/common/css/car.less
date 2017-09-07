@@ -1,0 +1,294 @@
+.box {
+    display: -moz-box;
+    /*Firefox*/
+    display: -webkit-box;
+    /*Safari,Opera,Chrome*/
+    display: box;
+}
+
+.item {
+    -moz-box-flex: 1.0;
+    /*Firefox*/
+    -webkit-box-flex: 1.0;
+    /*Safari,Opera,Chrome*/
+    box-flex: 1.0;
+    /*    width: 70%;*/
+}
+
+.tisp{
+    height: 0.35/1.17rem;
+    background: #3c3c42;
+    padding: 0 0.15/1.17rem;
+    margin-bottom: 0.1/1.17rem;
+    .phoneClose{
+        width: 0.151/1.17rem;
+        height: 0.151/1.17rem;
+        background: url('../imgs/phoneClose.png') no-repeat center center;
+        background-size:100% 100%; 
+        margin-top: 0.1/1.17rem;
+    }
+    p{
+        color: #fff;
+        display: inline;
+       line-height: 0.35/1.17rem;
+       margin-left: 0.1/1.17rem;
+    }
+    span{
+       color: #ff2725; 
+        line-height: 0.35/1.17rem;
+    }
+}
+
+.all,.select,.invalidCion{
+        width: 0.17/1.17rem;
+        height: 0.17/1.17rem ;
+        background: url('../imgs/not-select.png') no-repeat;
+        background-size:100% 100%; 
+        margin-right: 0.13/1.17rem;
+        margin-top: 0.1/1.17rem;
+    input{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+.select{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-top: 0;
+}
+
+.marchBox,.invalid{
+    background: #fff;
+    padding-left:0.15/1.17rem;
+    margin-bottom: 0.1/1.17rem;
+    .icon{
+         background:  url('../imgs/edit.png') no-repeat 0 center, #fff;
+        background-size:0.1/1.17rem 0.2/1.17rem; 
+        padding-left: 0.30/1.17rem;
+    }
+    .head{
+        height: 0.35/1.17rem;
+        border-bottom: 1px solid #e9e9e9;
+        p,span{
+            font-size: 0.13/1.17rem;
+            line-height: 0.35/1.17rem;
+            color: #454545;
+        }
+        span{
+            margin-right: 0.15/1.17rem;
+        }
+    }
+}    
+
+.invalidList li,.marchList li{
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #e9e9e9;
+    img{
+        width:0.8/1.17rem;
+        height: 0.8/1.17rem;
+        margin: 0.1/1.17rem 0.1/1.17rem 0.12/1.17rem 0.3/1.17rem;
+    }
+    .cen,.editTit{
+        padding-right: 0.15/1.17rem;
+        box-sizing: border-box;
+    }
+}
+
+.invalidList li:last-child,.marchList li:last-child{
+    border: none;
+}
+
+.cen>p:first-child,.editTit>p:first-child{
+    color: #454545;
+    font-size: 0.14/1.17rem;
+    line-height: 0.2/1.17rem;
+    // overflow: hidden;
+    // text-overflow: ellipsis; 
+    // white-space:normal;
+    margin-bottom: 0.1/1.17rem;
+    margin-top: 0.17/1.17rem;
+}
+
+.cen>div,.editTit>div{
+    margin-bottom: 0.15/1.17rem;
+}
+
+.cen>div>p,.editTit>div>p{
+    color: #333;
+}
+
+.cen>div>p:first-child,.editTit>p:last-child{
+    font-size: 0.14/1.17rem ;
+    color: #e93b39;
+}
+.invalidList li{
+    height: 100%;
+}
+
+.delete{
+    border-bottom: 1px solid #e9e9e9;
+    width: 0.65/1.17rem;
+     position: relative;
+    background: #e93b39;
+    color: #fff;
+    text-align: center;
+    line-height: 99%;
+    margin-top: 0.3px;
+    p{
+       position: absolute;
+        top: 50%;
+        left: 0.22/1.17rem;
+        transform: translateY(-50%);
+    }
+}
+
+// 失效商品
+.invalidList li{
+    background: #fff;
+   box-sizing: border-box;
+}
+
+.invalidList li .invalidCion{
+    background: url('../imgs/Invalid.png') no-repeat;
+    background-size:100% 100%; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+    opacity: 1
+}
+
+
+.invalidList li .invalidCen{
+    // border-bottom: 1px solid #e9e9e9;
+    padding-right: 0.15/1.17rem;
+   box-sizing: border-box;
+}
+ .invalidList li .invalidCen p:first-child{
+        font-size: 0.14/1.17rem;
+        color: #999;
+        margin-top: 0.35/1.17rem;
+        margin-bottom: 0.15/1.17rem
+}
+
+ .invalidList li .invalidCen p:last-child{
+     color: #999
+
+ }
+.settle{
+    height: 0.52/1.17rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #e9e9e9;
+    background: #fff;
+    .select{
+        left: 0.15/1.17rem;
+    }
+    >span{
+        line-height: 0.52/1.17rem;
+        margin-left: 0.43/1.17rem;
+        font-size: 0.13/1.17rem;
+        color: #454545;
+    }
+    >div font{
+        line-height: 0.52/1.17rem;
+        font-size: 0.14/1.17rem;
+        color: #333;
+        span{
+            color: #ff2725;
+            margin-right: 0.1/1.17rem;
+        }
+    }
+    button{
+        font-size: 0.14/1.17rem;
+        width: 1/1.17rem;
+        height: 0.45/1.17rem;
+        background: #e93b3a;
+        color: #fff;
+        margin-left: 0.1/1.17rem;
+        margin-right: 0.15/1.17rem;
+        margin-top: 0.05/1.17rem;
+        border-radius: 4px;
+    }
+}
+
+
+.check{
+    background: url('../imgs/select.png') no-repeat;
+    background-size:100% 100%;  
+}
+
+.editTit .num{
+    width: 0.88/1.17rem;
+    height: 0.22/1.17rem;
+    border: 1px solid #e9e9e9; 
+    border-radius: 4px;
+    margin-top: 0.2/1.17rem;
+    i{
+        width: 0.24/1.17rem;
+        line-height: 0.22/1.17rem;
+        font-size:0.18/1.17rem;
+        text-align: center;
+        color: #999;
+    }
+    p{
+        width: 0.35/1.17rem;
+        text-align: center;
+        line-height: 0.2/1.17rem;
+        height: 0.2/1.17rem;
+        border: 1px solid #333;
+        border-radius: 2px;
+    }
+}
+
+
+.spec{
+    width: 0.1/1.17rem;
+    height: 0.05/1.17rem;
+    background: url('../imgs/jiao.png') no-repeat;
+    background-size:100% 100%; 
+    margin-top: 0.05/1.17rem;
+    margin-left:0.05/1.17rem; 
+    
+}
+
+
+.invSettle button{
+    width: 90%;
+    margin: 0.05/1.17rem auto 0;
+    display: block;
+
+}
+
+.editMarch{
+    height: 0.3/1.17rem;
+    margin-bottom: 0.1/1.17rem;
+    text-align: left;
+    background:  url('../imgs/edit.png') no-repeat 0.16/1.17rem center, #fff;
+    background-size:0.1/1.17rem 0.2/1.17rem; 
+    line-height: 0.3/1.17rem;
+    font-size: 0.14/1.17rem;
+    span{
+        margin-left: 0.45/1.17rem;
+    }
+}
+
+
+
+.none img{
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 286/200/1.17rem;
+    height: 256/200/1.17rem;
+    margin-left: -286/400/1.17rem;
+    margin-top: -256/400/1.17rem;
+}
