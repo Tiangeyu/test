@@ -41,7 +41,7 @@
             that.isShow = !that.isShow
           }, 3000);
       })
-  // 已关闭微信sdk功能
+  // 已关闭微信sdk功能  暂无法使用
       // 获取用户信息
       //  获取appid
       // if(location.href.search('code') > 1){
