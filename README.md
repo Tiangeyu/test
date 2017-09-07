@@ -1,6 +1,6 @@
 # html
 
-> A Vue.js project
+> o2o小型电商网站
 
 ## Build Setup
 
